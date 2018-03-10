@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Dashboard</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+   
+   <div class="container"><br><br><br>
+   	 <form action="/dashboard" method="POST">
+   	 	<div class="col-md-6 col-md-offset-3">
+   	 		<div style="padding:10px;background-color:#3F729B;border-radius:3px;">
+   	 			<div class="row">
+   	 				<div class="col-md-12">
+   	 					<div class="form-group">
+   	 						<input type="text" name="club" placeholder="Club Name" class="form-control">
+   	 					</div>
+   	 				</div>
+   	 					<div class="col-md-12">
+   	 						<div class="form-group">
+   	 							<input type="text" name="country" placeholder="Country Name" class="form-control">
+   	 					    </div>
+   	 				    </div>
+   	 				    <div class="col-md-12">
+   	 						<div class="form-group">
+   	 							<button class="btn btn-primary upload-btn form-control" type="button">Upload File</button>
+   	 							<input type="file" name="upload" id="upload-input" class="form-control" style="display:none;"><br><br>
+
+   	 							<button class="btn btn-success form-control">Add Group</button>
+   	 					    </div>
+   	 				    </div>
+   	 			</div>
+   	 		</div>
+   	 	</div>
+   	 </form>
+   </div>
+
+
+   <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/js/upload.js"></script>
+</body>
+</html>
